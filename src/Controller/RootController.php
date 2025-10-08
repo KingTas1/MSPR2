@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
+
+// final class RootController extends AbstractController
+// {
+//     #[Route('/root', name: 'app_root')]
+//     public function index(): Response
+//     {
+//         return $this->render('root/index.html.twig', [
+//             'controller_name' => 'RootController',
+//         ]);
+//     }
+// }
+final class RootController
+{
+    #[Route('/', name: 'root')]
+    public function __invoke(): RedirectResponse
+    {
+        return new RedirectResponse('/index.html', 302);
+    }
+}

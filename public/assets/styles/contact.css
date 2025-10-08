@@ -1,0 +1,239 @@
+:root {
+    --orange: #F1A80F;
+    --dark-black: #0c0e0d;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: #c9c8c8;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+h2 {
+    font-family: "Antic Didone";
+    font-size: 50px;
+    text-transform: uppercase;
+}
+@media (max-width: 1130px) {
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* Navigation */
+
+.header-nav {
+    position: fixed;
+    /* top: 21px; */
+    top: 0;
+    align-items: center;
+    width: 100%;
+    /* z-index: 9999; */
+}
+
+.nav__container {
+    display: flex;
+    /* position: fixed; */
+    /* z-index: 900; */
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: #B23B53;
+    justify-content: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #D5EDDA;
+    font-weight: bold;
+    margin-inline: 16px;
+}
+.nav__link:hover {
+    color: #05421d;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.nav__link.active {
+    color: #05421d;
+    font-weight: bold;
+}
+
+.nav__list {
+    flex-shrink: 0;
+    list-style: none;
+    display: flex;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav__button-logo {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    /* padding-top: 2px; */
+    inline-size: 100%;
+    margin-right: 100px;
+    height: auto;
+}
+
+.nav__toggle-button {
+    display: none;
+}
+
+@media (max-width: 1130px) {
+    a {
+        margin-inline: 8px;
+    }
+}
+@media (max-width: 960px) {
+    .header-nav {
+        top: 0;
+    }
+    .header-nav--active {
+        background-color: #B23B53;
+    }
+    .header-nav--active .header-nav--active {
+        display: flex;
+    }
+    .nav__container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav__button-logo {
+        inline-size: auto;
+        margin-inline-end: auto;
+        margin-left: 10px;
+    }
+    .nav__toggle-button {
+        display: inline-flex;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .nav__link{
+        display: inline-block;
+        padding-block: 16px;
+    }
+    .header-nav--active .nav__list {
+        display: flex;
+        flex-direction: column;
+        inline-size: 100%;
+        margin-block: 20px;
+    }
+    .nav__list {
+        display: none;
+    }
+}
+
+.main-title {
+    padding-top: 110px;
+    width: 100%;
+    text-align: center;
+}
+.main-title p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Lato";
+    color: rgb(97, 97, 97);
+}
+.main-title span {
+    color: #1c4e80;
+    font-weight: 600;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1c4e80;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin: 6px 0 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #1c4e80;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+.form-btn:hover {
+    background-color: rgb(4, 4, 56);
+    color: #f1f1f1;
+}
+
+.error-message {
+  color: #da4d66;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Footer Section */
+
+footer {
+    font-size: 14px;
+}
+
+.footer-container {
+    height: 50px;
+    border-top: 1px solid rgb(180, 180, 180);
+    background-color: #B23B53;
+    color: #D5EDDA;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #D5EDDA;
+}
