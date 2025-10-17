@@ -1,3 +1,5 @@
+const form = document.querySelector('#contact-form');
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const fd = new FormData(form);
@@ -5,7 +7,7 @@ form.addEventListener('submit', async (e) => {
   try {
     const res = await fetch('/api/contact', {
       method: 'POST',
-      body: fd, // ne PAS mettre de headers ici
+      body: fd, // ne pas ajouter de headers
     });
 
     const data = await res.json();
