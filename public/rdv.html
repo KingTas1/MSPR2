@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/styles/rdv.css" />
+        <title>Prise de rendez-vous</title>
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <div class="nav__container">
+                    <div class="nav__logo">
+                        <a href="./index.html">
+                            <button class="nav__button-logo">
+                                <img
+                                    src="assets/img/logo-canopees-removebg-preview.png"
+                                    alt="logo entreprise Canopées"
+                                    width="140"
+                                    height="30"
+                                />
+                            </button>
+                        </a>
+                    </div>
+
+                    <button class="nav__toggle-button">
+                        <img
+                            src="assets/logos/hamburger.svg"
+                            class="nav__toggle-button"
+                            width="30"
+                            height="30"
+                        />
+                    </button>
+
+                    <ul class="nav__list">
+                        <li>
+                            <a href="./index.html" class="nav__link active"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./AboutUs.html" class="nav__link"
+                                >Qui sommes-nous?</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./prestation.html" class="nav__link"
+                                >Nos prestations</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./tarifs.html" class="nav__link"
+                                >Nos tarifs</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav__link"
+                                >Contactez-nous</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="wrap">
+                <div class="actions">
+                    <h2>
+                        📅 Calendrier des rendez-vous (un spécialiste se déplacera directement chez vous).
+                    </h2>
+                </div>
+                <div class="card">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+
+            <!-- Modal réservation -->
+            <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+                <div class="modal" role="dialog" aria-modal="true">
+                    <h3>Réserver un créneau</h3>
+                    <div class="row">
+                        <div>
+                            <label>Nom complet *</label>
+                            <input id="fName" type="text" required />
+                        </div>
+                        <div>
+                            <label>Email *</label>
+                            <input id="fEmail" type="email" required />
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 8px">
+                        <div>
+                            <label>Téléphone *</label>
+                            <input id="fPhone" type="text" required />
+                        </div>
+                        <div>
+                            <label>Adresse complète *</label>
+                            <input id="fAddress" type="text" required />
+                        </div>
+                    </div>
+                    <div style="margin-top: 8px">
+                        <label>Objet du rendez-vous *</label>
+                        <input
+                            id="fTitle"
+                            type="text"
+                            placeholder="Ex: Devis taille de haie"
+                            required
+                        />
+                    </div>
+                    <div style="margin-top: 8px">
+                        <label>Notes (optionnel)</label>
+                        <textarea
+                            id="fNotes"
+                            placeholder="Précisions utiles…"
+                        ></textarea>
+                    </div>
+                    <div class="footer">
+                        <button class="btn" id="btnCancel">Annuler</button>
+                        <button class="btn primary" id="btnSubmit">
+                            Confirmer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

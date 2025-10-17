@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Canopées - Contact</title>
+    <link rel="stylesheet" href="assets/styles/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="home-header">
+      <nav class="header-nav">
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="./index.html">
+              <button class="nav__button-logo">
+                <img
+                  src="assets/img/logo-canopees-removebg-preview.png"
+                  alt="logo entreprise Canopées"
+                  width="140"
+                  height="30"
+                />
+              </button>
+            </a>
+          </div>
+
+          <button class="nav__toggle-button">
+            <img
+              src="assets/logos/hamburger.svg"
+              class="nav__toggle-button"
+              width="30"
+              height="30"
+            />
+          </button>
+
+          <ul class="nav__list">
+            <li><a href="./index.html" class="nav__link">Accueil</a></li>
+            <li>
+              <a href="./AboutUs.html" class="nav__link">Qui sommes-nous?</a>
+            </li>
+            <li>
+              <a href="./prestation.html" class="nav__link">Nos prestations</a>
+            </li>
+            <li><a href="./tarifs.html" class="nav__link">Nos tarifs</a></li>
+            <li>
+              <a href="./contact.html" class="nav__link active"
+                >Contactez-nous</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div class="main-title">
+        <h2>
+          Contactez-nous pour un devis, une intervention ou un renseignement
+        </h2>
+        <p>Vous avez un arbre à élaguer ? Un jardin à transformer ?</p>
+        <p>Envoyez-nous un message, et nous vous répondrons sous 24h.</p>
+        <p>Appelez-nous pour prendre un rdv au <span>06.99.99.99.99</span></p>
+        <p class="findme">Où nous trouver : 12 rue des Lilas, 69000 Lyon, France</p>
+      </div>
+
+      <section class="form-section">
+        <div class="form-container">
+          <form id="contact-form" class="contact-form">
+            <h3 class="form-title">Nous contacter</h2>
+
+            <label for="name">Nom</label>
+            <input type="text" id="name" />
+            <p class="error-message" id="name-error"></p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <p class="error-message" id="email-error"></p>
+
+            <label for="phone">Numéro de téléphone</label>
+            <input type="tel" id="phone" />
+            <p class="error-message" id="phone-error"></p>
+
+            <label for="message">Votre message</label>
+            <textarea id="message" rows="5"></textarea>
+            <p class="error-message" id="message-error"></p>
+
+            <button type="submit" class="form-btn">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer-text">Copyright © 2020 Canopées | All Rights Reserved</p>
+        <ul class="footer-list">
+          <a href="mentions.html">Mentions légales</a>
+          <a href="mentions.html">CGV</a> 
+          <a href="mentions.html">CGU</a> 
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

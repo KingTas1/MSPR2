@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canopées - Accueil</title>
+    <meta
+      name="description"
+      content="Nous sommes ici pour préserver la nature tout en la rendant encore plus jolie à la regarder."
+    />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="home-header">
+      <nav class="header-nav">
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="./index.html">
+              <button class="nav__button-logo">
+                <img
+                  src="assets/img/logo-canopees-removebg-preview.png"
+                  alt="logo entreprise Canopées"
+                  width="140"
+                  height="30"
+                />
+              </button>
+            </a>
+          </div>
+
+          <button class="nav__toggle-button">
+            <img
+              src="assets/logos/hamburger.svg"
+              class="nav__toggle-button"
+              width="30"
+              height="30"
+            />
+          </button>
+
+          <ul class="nav__list">
+            <li><a href="./index.html" class="nav__link active">Accueil</a></li>
+            <li>
+              <a href="./AboutUs.html" class="nav__link">Qui sommes-nous?</a>
+            </li>
+            <li>
+              <a href="./prestation.html" class="nav__link">Nos prestations</a>
+            </li>
+            <li><a href="./tarifs.html" class="nav__link">Nos tarifs</a></li>
+            <li>
+              <a href="./contact.html" class="nav__link">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-faded"></div>
+      <img
+        src="assets/img/jardin sombre.avif"
+        alt="jardin"
+        class="header-jardin"
+      />
+      <div class="header-container">
+        <p class="header-surtitle">Découvrez l'art de</p>
+        <h1 class="header-title">SUBLIMER LA NATURE</h1>
+        <p class="header-subtitle">
+          Nous entretenons vos espaces pour qu'ils restent des lieux de calme,
+          de beauté et d'équilibre.
+        </p>
+        <a href="./tarifs.html" class="header-button"
+          ><span>NOS TARIFS</span></a
+        >
+
+        <div class="header-info">
+          <p class="header-info-p">
+            <img
+              src="assets/logos/location.svg"
+              class="header-info-icon"
+              width="24"
+              height="24"
+            />
+            <span class="header-info-text"
+              >12 rue des Lilas, 69000 Lyon, France</span
+            >
+          </p>
+          <p class="header-info-p">
+            <img
+              src="assets/logos/clock.svg"
+              class="header-info-icon"
+              width="24"
+              height="24"
+            />
+            <span class="header-info-text"
+              >Horaires d'ouvertures: Lundi-Samedi: 8h - 18h</span
+            >
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <h2 class="main-title">Canopées - Créateur d'espaces verts durables</h2>
+        <p class="main-p">
+          Depuis 2020, Canopées cultive bien plus que des jardins : nous
+          façonnons des lieux de respiration, d'harmonie et de renouveau. Notre
+          passion pour le vivant guide chacun de nos gestes, qu'il s'agisse de
+          faire naître un paysage, de redonner vie à un arbre ou de simplement
+          écouter ce que la nature nous murmure. <br /><br />
+          Particuliers en quête de sérénité, entreprises soucieuses de leur
+          environnement, ou communes désireuses d'embellir leur cadre de vie :
+          <br />
+          Nous vous aidons à réenchanter votre quotidien par la puissance
+          végétale. <br /><br />
+          Chez Canopées, nous croyons que la beauté naturelle est une œuvre
+          d'équilibre, et que cet équilibre se cultive avec patience, respect et
+          cœur.
+        </p>
+      </div>
+
+      <div class="main-slider">
+        <img
+          src="./assets/img/elagage d'arbre.png"
+          alt="elagage d'arbre"
+          class="slide-img"
+          width="600"
+          height="450"
+        />
+        <img
+          src="./assets/img/Bob grimpe elagage.jpg"
+          alt="Bob grimpe elagage"
+          class="slide-img active"
+          width="600"
+          height="450"
+        />
+        <img
+          src="./assets/img/taillage de haies circulaire.jpg"
+          alt="taillage de haies circulaire"
+          class="slide-img"
+          width="600"
+          height="450"
+        />
+        <img
+          src="./assets/img/taillage de haies.jpg"
+          alt="taillage de haies"
+          class="slide-img"
+          width="600"
+          height="450"
+        />
+
+        <button data-action="-1" class="control-btn previous-btn">
+          <img src="./assets/logos/left-arrow.svg" alt="left arrow" />
+        </button>
+        <button data-action="1" class="control-btn next-btn">
+          <img src="./assets/logos/right-arrow.svg" alt="right arrow" />
+        </button>
+      </div>
+
+      <div class="main-about-us">
+        <h2 class="main-title-about-us">
+          Bob & Tom, une équipe soudée par la nature
+        </h2>
+        <p class="main-text-about-us">
+          Complices depuis plus de 20 ans, Bob et Tom ont toujours partagé une
+          passion commune pour les grands espaces, les arbres majestueux et le
+          travail de la terre. En 2020, ils fondent Canopées avec un objectif
+          clair : proposer des services paysagers durables, accessibles et
+          humains. Leur amitié et leur complémentarité donnent à l'entreprise
+          une âme que l'on retrouve dans chaque projet réalisé, du petit jardin
+          intime au parc arboré.
+        </p>
+        <div class="img-wrapper">
+          <img
+          src="assets/img/Bob & Tom.jpg"
+          alt="Bob & Tom"
+          class="img-bobtom"/>
+        </div>
+        <div class="btn-wrapper">
+          <a href="./AboutUs.html" class="btn-about-us"
+            >Découvrir leur histoire</a
+          >
+        </div>
+      </div>
+
+      <section>
+        <div class="main-presta">
+          <h2 class="presta-title">Nos prestations</h2>
+          <p class="presta-text">Des services adaptés à chaque besoin vert</p>
+          <p class="presta-p">
+            Canopées propose une gamme complète de services pour embellir,
+            entretenir et valoriser vos espaces extérieurs, quels que soient
+            leur taille ou leur usage. Que vous soyez un particulier souhaitant
+            profiter d'un jardin harmonieux, une entreprise désireuse d'offrir
+            un cadre verdoyant à ses collaborateurs, ou une collectivité
+            attentive au bien-être de ses citoyens, notre équipe vous accompagne
+            avec passion et professionnalisme. De la conception à la
+            réalisation, de l'entretien régulier à des interventions ponctuelles
+            comme la taille de haies, l'élagage ou le compostage, nous mettons
+            tout en œuvre pour créer des espaces verts durables, esthétiques et
+            respectueux de l'environnement.
+          </p>
+          <div class="presta-btn-wrapper">
+            <a href="./prestation.html" class="presta-btn">Voir plus</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="tarifs">
+        <div class="pricing-text">
+          <p class="pricing-surtitle">Des offres adaptées à chaque besoin</p>
+          <h2 class="pricing-title">Tarifs particuliers, professionnels et collectivités</h2>
+          <p class="pricing-subtitle">Que vous soyez un particulier à la recherche d'un jardin soigné, une entreprise souhaitant valoriser ses extérieurs, ou une collectivité avec des besoins spécifiques, nous avons une solution claire, transparente et compétitive. Explorez nos offres.
+        </div>
+            
+          <div class="pricing-card-container">
+
+            <div class="pricing-card c1">
+              <h3>
+                <span class="plan-name">Particuliers</span>
+              </h3>
+              <p class="card-subtitle">Offrir un jardin agréable, esthétique et fonctionnel pour la vie quotidienne.</p>
+              <ul class="card-list">
+                <li>• Entretien de jardin à l'année : tonte, taille, désherbage, arrosage.</li>
+                <li>• Création d'espaces verts : pelouses, massifs, potagers familiaux.</li>
+                <li>• Élagage & abattage d'arbres : sécurité, lumière, esthétique.</li>
+                <li>• Conseils paysagers personnalisés : choix de plantes, aménagement durable.</li>
+                <li>• Services saisonniers : nettoyage d'automne, remise en état printemps.</li>
+              </ul>
+              <a href="tarifs.html#particulilers" class="pricing-button">Voir nos offres</a>
+            </div>
+
+            <div class="pricing-card c2">
+              <h3>
+                <span class="plan-name">Professionnels</span>
+              </h3>
+              <p class="card-subtitle">Valoriser l'image de marque de l'entreprise grâce à un cadre extérieur soigné.</p>
+              <ul class="card-list">
+                <li>• Aménagement d'entrées et façades végétalisées.</li>
+                <li>• Entretien régulier de sites professionnels : bureaux, zones industrielles.</li>
+                <li>• Création de coins détente pour collaborateurs.</li>
+                <li>• Végétalisation de parkings ou toitures.</li>
+                <li>• Interventions discrètes et efficaces (hors horaires d'ouverture, par ex.)</li>
+              </ul>
+              <a href="tarifs.html#professionels" class="pricing-button">Voir nos offres</a>
+            </div>
+
+            <div class="pricing-card c3">
+              <h3>
+                <span class="plan-name">Collectivités</span>
+              </h3>
+              <p class="card-subtitle">Entretenir des espaces publics accueillants, durables et respectueux de l'environnement.</p>
+              <ul class="card-list">
+                <li>• Aménagement de parcs, jardins municipaux, cours d'école.</li>
+                <li>• Gestion écologique des espaces verts.</li>
+                <li>• Plantation d'arbres et entretien de zones boisées.</li>
+                <li>• Installation de mobiliers verts (bancs, clôtures naturelles, compost).</li>
+                <li>• Interventions sur demande ou contrat annuel.</li>
+              </ul>
+              <a href="tarifs.html#collectivites" class="pricing-button">Voir nos offres</a>
+            </div>
+
+          </div>
+          <img src="assets/img/shadow.png" alt="shadow" class="card-shadow">
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-container">
+          <h2 class="contact-title">Besoin d'un renseignement ?</h3>
+          <p class="contact-text">Faites germer vos projets avec nous — un simple message peut être le début d'un bel espace vert.</p>
+          <a href="contact.html" class="contact-btn">Contactez-nous</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer-text">Copyright © 2020 Canopées | All Rights Reserved</p>
+        <ul class="footer-list">
+          <a href="mentions.html">Mentions légales</a>
+          <a href="mentions.html">CGV</a> 
+          <a href="mentions.html">CGU</a> 
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>
